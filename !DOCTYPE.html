@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Person</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    body {
+      background: linear-gradient(-45deg, #1e293b, #3b0764, #1f2937, #4b5563);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+  </style>
+</head>
+<body class="text-white flex items-center justify-center h-screen">
+  <div class="bg-gray-800 bg-opacity-80 p-8 rounded-2xl shadow-2xl text-center max-w-sm">
+    <img 
+      src="https://via.placeholder.com/150" 
+      alt="Riham's Profile" 
+      class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500"
+    />
+    <h1 class="text-2xl font-bold text-purple-300 mb-2">Riham</h1>
+    <p class="text-gray-300 mb-4">My favorite person of all time 💖</p>
+    <a 
+      href="https://instagram.com/riham" 
+      target="_blank" 
+      class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition"
+    >
+      Visit Instagram
+    </a>
+  </div>
+</body>
+</html>
